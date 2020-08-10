@@ -115,9 +115,24 @@
             display: block;
         }
 
-        #sidebar ul li a:hover {
-            background: #40407a;
-            color: #706fd3;
+        .ho1:hover {
+            background: #b8ffff;
+            color: #636e72;
+        }
+
+        .ho2:hover {
+            background: #ffcdc2;
+            color: #636e72;
+        }
+
+        .ho3:hover {
+            background: #add6ff;
+            color: #636e72;
+        }
+
+        .ho4:hover {
+            background: #bbb6fa;
+            color: #636e72;
         }
 
         ul ul a {
@@ -186,19 +201,9 @@
             color: #706fd3;
         }
 
-        .ac1 {
-            background: #b8ffff;
-            color: #2d3436;
-        }
-
-        .ac2 {
-            background: #ff7675;
-            color: #2d3436;
-        }
-
-        .ac3 {
-            background: #74b9ff;
-            color: #2d3436;
+        .act4 {
+            background: #a29bfe;
+            color: #706fd3;
         }
 
         .box {
@@ -233,6 +238,7 @@
             margin-bottom: 10px;
             margin-left: 7px;
         }
+
         .bar {
             margin-top: 25%;
         }
@@ -251,46 +257,26 @@
                 <li>
                     <div class="row">
                         <div class="col-md-3 colc act1"><img class="uli" src="<?php echo base_url('assets/img/home.png') ?>" alt=""></div>
-                        <div class="col-md-9 colc"><a class="ac1" href="#">Home</a></div>
+                        <div class="col-md-9 colc"><a class="ho1" href="#">Home</a></div>
 
                         <div class="col-md-3 colc act2"><img class="uli" src="<?php echo base_url('assets/img/cart.png') ?>" alt=""></div>
-                        <div class="col-md-9 colc"><a href="#">Lelang</a></div>
+                        <div class="col-md-9 colc"><a class="ho2" href="#">Lelang</a></div>
 
                         <div class="col-md-3 colc act3"><img class="uli" src="<?php echo base_url('assets/img/info.png') ?>" alt=""></div>
-                        <div class="col-md-9 colc"><a href="#">Information</a></div>
+                        <div class="col-md-9 colc"><a class="ho3" href="#">Information</a></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-unstyled bar">
+                <li>
+                    <div class="row">
+                        <div class="col-md-3 colc act4"><img class="uli" src="<?php echo base_url('assets/img/manage.png') ?>" alt=""></div>
+                        <div class="col-md-9 colc"><a class="ho4" href="#">Manage</a></div>
                     </div>
                 </li>
             </ul>
         </nav>
-        <div id="content">
-            <nav class="navbar navbar-default">
-                <div class="row rowc">
-                    <div class="col-md-5">
-                        <img style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;" width="40px" src="<?php echo base_url('assets/img/mags.png') ?>" alt="">
-                        <input type="text" placeholder="Search...">
-                    </div>
-                </div>
-                <img width="60px" src="<?php echo base_url('assets/img/logo.png') ?>" alt="">
-            </nav>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?php echo base_url('assets/img/slide.jpg') ?>" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo base_url('assets/img/slide.jpg') ?>" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo base_url('assets/img/slide.jpg') ?>" alt="Third slide">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php $this->load->view('home') ?>
     </div>
 </body>
 <script>
